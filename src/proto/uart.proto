@@ -7,14 +7,14 @@ enum DevKind {
   A = 0;
   DevAck = 1;
   HostAck = 2;
-
-  MotorDriver = 3;
+  MotorDriverL = 3;
   CamGimball = 4;
   Science = 5;
   Battery = 6;
   ArmTelem = 7;
   DebrisClear = 8;
   ChasisLights = 9;
+  MotorDriverR = 10;
 }
 
 message Assignment {

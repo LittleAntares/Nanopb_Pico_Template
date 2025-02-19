@@ -29,9 +29,10 @@ typedef struct
 
 
 void write_stdio(data_t *buff);
-uint8_t decode_request(data_t *buff, Assignment *message);
 uint8_t process_request(data_t *request, data_t *response);
-uint8_t encode_request(data_t *buffer, Assignment *msg);
-
+uint8_t processing_msg_request(data_t *buffer, Assignment *msg);
+uint8_t encode_request_msg(data_t *buffer, Assignment *msg);
+uint8_t decode_request_msg(data_t *buff, Assignment *message);
+uint8_t special_request(data_t *request, data_t *response);
 
 #endif
